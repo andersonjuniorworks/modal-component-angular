@@ -1,0 +1,96 @@
+.backdrop-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000000bf;
+}
+
+.modal {
+  position: absolute;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e69a;
+}
+
+.modal .modal-header .header-content {
+  padding: 15px;
+}
+
+.modal .modal-header .header-content .title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.modal .modal-header .header-content .subtitle {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  color: #464646;
+}
+
+.modal .modal-body {
+  position: relative;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+}
+
+.close-icon {
+  height: calc(100% - 10px);
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 0 10px 0 0;
+}
+
+.close-icon i {
+  transition: ease-in-out 0.3s;
+}
+
+.close-icon i:hover {
+  cursor: pointer;
+}
+
+.modal.sm {
+  max-width: 480px;
+}
+
+.modal.md {
+  max-width: 720px;
+}
+
+.modal.lg {
+  max-width: 1024px;
+}
+
+.modal.xl {
+  max-width: 1080px;
+}
+
+@media screen and (max-width: 768px) {
+  .modal.sm {
+    max-width: 100%;
+  }
+
+  .modal.md {
+    max-width: 100%;
+  }
+
+  .modal.lg {
+    max-width: 100%;
+  }
+
+  .modal.xl {
+    max-width: 100%;
+  }
+}

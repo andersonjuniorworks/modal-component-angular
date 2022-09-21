@@ -1,0 +1,18 @@
+<div class="backdrop-overlay">
+  <div class="modal {{ config.size }}">
+    <div class="modal-header">
+      <div class="header-content">
+        <div class="title">{{ config.title }}</div>
+        <div class="subtitle" *ngIf="config.subtitle">
+          {{ config.subtitle }}
+        </div>
+      </div>
+      <div class="close-icon">
+        <i class="bi bi-x" (click)="modalRef.close()"></i>
+      </div>
+    </div>
+    <div class="modal-body">
+      <ng-container *ngTemplateOutlet="config.templateRef"></ng-container>
+    </div>
+  </div>
+</div>
