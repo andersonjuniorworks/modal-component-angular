@@ -20,7 +20,7 @@ export class AppComponent {
       templateRef: this.modalTemplateRef,
       title: 'Criando um Modal reutilizável com Angular',
       subtitle: 'Construindo um componente de modal simples e intuitivo',
-      size: 'md',
+      size: 'xl',
     });
   }
 
